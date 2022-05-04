@@ -1,10 +1,31 @@
-<!DOCTYPE html>
+<?php
+
+require('../php/config.php');
+
+    if(isset($_POST['submit'])){
+        if(empty($_POST['fname'])){
+            echo 'First Name is Reuired!';
+        }else{
+            $firstName = $_POST['fname'];
+            if(!preg_match('/^[a-zA-Z\s]+$/',$firstName)){
+                echo 'first name must be latters and space only';
+            }
+        }
+        echo $_POST['fname'];
+        echo $_POST['nic'];
+        echo $_POST['uName'];
+        echo $_POST['uPassword'];
+        echo $_POST['uEmail'];
+        echo $_POST['dob'];
+        echo $_POST['address'];
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Customer Register</title>
 </head>
@@ -12,7 +33,7 @@
     <div class="container">
         <div class="title">Customer Registration</div>
        
-        <form action="php/customerRegister.php" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
           <div class="user-details">
               <div class="input-box">
                   <span class="details">First Name</span>
@@ -64,9 +85,14 @@
            
           </div>
           <div class="button">
-            <input type="button" value="Register">
+            <input type="submit" name="submit" value="Register">
         </div>
         </form>
     </div>
+
+
 </body>
 </html>
+
+
+
