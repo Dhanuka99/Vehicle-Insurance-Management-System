@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+//Linking the configuration file
+require 'config.php';
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -68,5 +72,11 @@
         </div>
         </form>
     </div>
+
 </body>
 </html>
+
+<?php
+    
+?>
+
