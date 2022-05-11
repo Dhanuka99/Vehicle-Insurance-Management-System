@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 require('../php/config.php');
 
@@ -20,12 +21,22 @@ require('../php/config.php');
         echo $_POST['address'];
     }
 ?>
+=======
+//Linking the configuration file
+require 'config.php';
+?>
+
+>>>>>>> dace51fc7db08d272bce58237c475469b42055e3
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/style.css">
+=======
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> dace51fc7db08d272bce58237c475469b42055e3
 
     <title>Customer Register</title>
 </head>
@@ -33,7 +44,11 @@ require('../php/config.php');
     <div class="container">
         <div class="title">Customer Registration</div>
        
+<<<<<<< HEAD
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+=======
+        <form action="php/customerRegister.php" method="post">
+>>>>>>> dace51fc7db08d272bce58237c475469b42055e3
           <div class="user-details">
               <div class="input-box">
                   <span class="details">First Name</span>
@@ -85,14 +100,27 @@ require('../php/config.php');
            
           </div>
           <div class="button">
+<<<<<<< HEAD
             <input type="submit" name="submit" value="Register">
+=======
+            <input type="button" value="Register">
+>>>>>>> dace51fc7db08d272bce58237c475469b42055e3
         </div>
         </form>
     </div>
 
+<<<<<<< HEAD
 
 </body>
 </html>
 
 
+=======
+</body>
+</html>
+
+<?php
+    
+?>
+>>>>>>> dace51fc7db08d272bce58237c475469b42055e3
 
