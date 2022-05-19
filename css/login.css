@@ -4,7 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 }
 html,body{
   display: grid;
@@ -26,13 +29,20 @@ html,body{
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+<<<<<<< HEAD
  
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 }
 .wave{
     position: relative;
     width:400px ;
     left: -450px;
+<<<<<<< HEAD
     top: 90px;
+=======
+    top: 60px;
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 
 }
 .wrapper .title{

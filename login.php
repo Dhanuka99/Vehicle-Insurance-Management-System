@@ -56,9 +56,12 @@ if(isset($_POST['submit'])){
    </body>
     
 </body>
+<<<<<<< HEAD
 
 <?php
 //require 'Footer.php';
 
 ?>
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 </html>

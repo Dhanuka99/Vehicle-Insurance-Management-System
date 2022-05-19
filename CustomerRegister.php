@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 //require 'Header.php';
 require 'config.php';
 
@@ -25,6 +26,9 @@ else {
 }
 
 }
+=======
+
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +37,11 @@ else {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/Customer.css">
+=======
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 
     <title>Customer Register</title>
 </head>
@@ -41,7 +49,11 @@ else {
     <div class="container">
         <div class="title">Customer Registration</div>
        
+<<<<<<< HEAD
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+=======
+        <form action="php/customerRegister.php" method="post">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
           <div class="user-details">
               <div class="input-box">
                   <span class="details">First Name</span>
@@ -93,14 +105,21 @@ else {
            
           </div>
           <div class="button">
+<<<<<<< HEAD
             <input type="submit"  value="Register">
             
+=======
+            <input type="button" value="Register">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
         </div>
         </form>
     </div>
 </body>
+<<<<<<< HEAD
 <?php
 
 
 ?>
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 </html>

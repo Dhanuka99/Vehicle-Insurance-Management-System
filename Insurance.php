@@ -8,12 +8,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/Insurance.css">
     <title>Insurance Form</title>
 </head>
 <body>
     
 
+=======
+    <link rel="stylesheet" href="css/style.css">
+    <title>Insurance Form</title>
+</head>
+<body>
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
     <div class="container">
         <div class="title">Insurance Request Form</div>
         <form action="#">

@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 //require 'Header.php';
 //require 'Header.php';
 require 'config.php';
@@ -10,6 +11,10 @@ require 'config.php';
     //fetch the resulting rows as an array
     
     echo $customerID;
+=======
+//Linking the configuration file
+//require 'config.php';
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,11 +22,19 @@ require 'config.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/Vehicle.css">
     <title>Vehicle Register</title>
 </head>
 <body>
 <div class="container">
+=======
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vehicle Register</title>
+</head>
+<body>
+    <div class="container">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
         <div class="title">Vehicle Registration</div>
         <form action="#">
           <div class="user-details">
@@ -63,6 +76,7 @@ require 'config.php';
             <input type="button" value="Register">
         </div>
         </form>
+<<<<<<< HEAD
       
     </div>
     
@@ -72,4 +86,8 @@ require 'config.php';
 
 
 ?>
+=======
+    </div>
+</body>
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
 </html>
