@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 require 'Header.php';
 //Linking the configuration file
@@ -87,6 +88,14 @@ if(isset($_POST['login'])){
       echo "invalid username password";
    }
 }*/
+=======
+require 'Header.php';
+//Linking the configuration file
+//require 'config.php';
+if(isset($_POST['submit'])){
+
+}
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,13 +104,17 @@ if(isset($_POST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
     <title>Login</title>
 </head>
 <body>
 <div class="wave">
    <img src="img/phone2.svg" alt="">
 </div>
+<<<<<<< HEAD
 
 <div class="wrapper">
 <?php
@@ -133,6 +146,25 @@ if(isset($_POST['login'])){
             </div>
 
 
+=======
+<div class="wrapper">
+         <div class="title">
+            Login
+         </div>
+         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+            <div class="field">
+               <input type="text" name="username" required>
+               <label>User Name</label>
+            </div>
+            <div class="field">
+               <input type="text" name="nic" required>
+               <label>NIC</label>
+            </div>
+            <div class="field">
+               <input type="password" name="password" required>
+               <label>Password</label>
+            </div>
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
             <div class="content">
                <div class="checkbox">
                   <input type="checkbox" id="remember-me">
@@ -143,7 +175,11 @@ if(isset($_POST['login'])){
                </div>
             </div>
             <div class="field">
+<<<<<<< HEAD
                <input name="login" type="submit" value="Login">
+=======
+               <input type="submit" value="Login">
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
             </div>
             <div class="signup-link">
                Not a member? <a href="#">Signup now</a>
@@ -153,4 +189,15 @@ if(isset($_POST['login'])){
    </body>
     
 </body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+<?php
+//require 'Footer.php';
+
+?>
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
 </html>
