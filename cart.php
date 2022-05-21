@@ -1,7 +1,10 @@
 <?php
 
     require 'config.php';
+<<<<<<< HEAD
   
+=======
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
 ?>
 
 <!DOCTYPE html>
@@ -43,5 +46,9 @@ if ($result) {
    
 ?>
 </body>
+<<<<<<< HEAD
 </html>
 
+=======
+</html>
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
