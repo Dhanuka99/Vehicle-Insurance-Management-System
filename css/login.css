@@ -4,11 +4,42 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
   
 }
 .error{
  color: red;
  font-size: 30px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
 }
 html,body{
   display: grid;
@@ -30,13 +61,60 @@ html,body{
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+<<<<<<< HEAD
  
+=======
+<<<<<<< HEAD
+ 
+=======
+<<<<<<< HEAD
+ 
+=======
+<<<<<<< HEAD
+ 
+=======
+<<<<<<< HEAD
+ 
+=======
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
 }
 .wave{
     position: relative;
     width:400px ;
     left: -450px;
+<<<<<<< HEAD
     top: 90px;
+=======
+<<<<<<< HEAD
+    top: 90px;
+=======
+<<<<<<< HEAD
+    top: 90px;
+=======
+<<<<<<< HEAD
+    top: 90px;
+=======
+<<<<<<< HEAD
+    top: 90px;
+=======
+<<<<<<< HEAD
+    top: 90px;
+=======
+    top: 60px;
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
 
 }
 .wrapper .title{

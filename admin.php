@@ -24,6 +24,10 @@ require 'config.php';
        </ul>
     </div>
     <div class="container">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
         <div class="customerCount">
             
         </div>
@@ -34,6 +38,12 @@ require 'config.php';
   Customer Count <span class="badge text-bg-secondary">4</span>
 </button>
 
+<<<<<<< HEAD
+=======
+=======
+    <button class="btn btn-primary my-5"><a class="text-light" href="CustomerRegister.php">Add User</a> </button>
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
     <table class="table caption-top">
   <caption><h2 style="font-weight:700;">Registered Customer List</h2></caption>
   <thead>
@@ -70,7 +80,19 @@ if ($result) {
         $upassword = $row['customerPassword'];
 
         echo ' <tr>
+<<<<<<< HEAD
         <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+<<<<<<< HEAD
+        <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+<<<<<<< HEAD
+        <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+        <th style="font-weight:500;" scope="row">'.$id.'</th>
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
         <td style="font-weight:500;" >'.$nic.'</td>
         <td style="font-weight:500;">'.$fname.'</td>
         <td style="font-weight:500;">'.$lname.'</td>
