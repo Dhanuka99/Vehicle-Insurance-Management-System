@@ -1,6 +1,16 @@
 <?php
 
 ?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
      <!DOCTYPE html>
      <html lang="en">
      <head>
@@ -8,6 +18,13 @@
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Document</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
          <link rel="stylesheet" href="css/HeadFooter.css">
         
         <!--------external CSS style sheets-------->   
@@ -15,6 +32,14 @@
         
         <!--------external link for icons-------->
         <script src="https://kit.fontawesome.com/d9dc65a069.js" ></script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
      </head>
      <body>
         <!---------FOOTER--------->
