@@ -1,4 +1,15 @@
 <?php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+//require 'Header.php';
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 require 'config.php';
 
 if(isset($_POST['submit'])){
@@ -12,6 +23,13 @@ $dob = $_POST['dob'];
 $address = $_POST['address'];
 $gender = $_POST['gender'];
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 
 $sql = "INSERT INTO customer(customerNIC,customerFirstName,customerLastName,customerAddress,customerMail,customerGender,customerDOB,customerUserName,customerPassword)
 VALUES ('$nic','$firstName','$lastName','$address','$email','$gender','$dob','$userName','$password')";
@@ -19,12 +37,38 @@ $result = mysqli_query($conn,$sql);
 if($result){
      echo "New recorded addded";
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+$sql = "INSERT INTO customer VALUES ('$nic','$firstName','$lastName','$address','$email','$gender','$dob','$userName','$password')";
+$result = mysqli_query($conn,$sql);
+if($result){
+     alert("New recorded addded");
+    
+    header('location: '.BASEURL."?user_reg=success");
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 }
 else {
     echo "Error inserting records:".$conn->error;
 }
 
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +77,23 @@ else {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/Customer.css">
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/Customer.css">
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/Customer.css">
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/Customer.css">
+=======
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 
     <title>Customer Register</title>
 </head>
@@ -41,7 +101,23 @@ else {
     <div class="container">
         <div class="title">Customer Registration</div>
        
+<<<<<<< HEAD
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+=======
+<<<<<<< HEAD
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+=======
+<<<<<<< HEAD
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+=======
+<<<<<<< HEAD
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+=======
+        <form action="php/customerRegister.php" method="post">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
           <div class="user-details">
               <div class="input-box">
                   <span class="details">First Name</span>
@@ -93,14 +169,54 @@ else {
            
           </div>
           <div class="button">
+<<<<<<< HEAD
             <input type="submit" name="submit" value="Register">
             
+=======
+<<<<<<< HEAD
+            <input type="submit" name="submit" value="Register">
+            
+=======
+<<<<<<< HEAD
+            <input type="submit" name="submit" value="Register">
+            
+=======
+<<<<<<< HEAD
+            <input type="submit"  value="Register">
+            
+=======
+            <input type="button" value="Register">
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
         </div>
         </form>
     </div>
 </body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 <?php
 
 
 ?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 </html>

@@ -61,7 +61,11 @@ if ($result) {
         $upassword = $row['customerPassword'];
 
         echo ' <tr>
+<<<<<<< HEAD
         <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+        <th style="font-weight:500;" scope="row">'.$id.'</th>
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
         <td style="font-weight:500;" >'.$nic.'</td>
         <td style="font-weight:500;">'.$fname.'</td>
         <td style="font-weight:500;">'.$lname.'</td>

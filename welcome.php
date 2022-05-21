@@ -1,5 +1,9 @@
 <?php
 session_start();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
 if (isset($_SESSION['username']) && isset($_SESSION['type'])) {
     # code...
 
@@ -27,4 +31,16 @@ if (isset($_SESSION['username']) && isset($_SESSION['type'])) {
     header("Location: login.php");
     exit();
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+=======
+$username = $_SESSION['UserName'];
+echo 'welcome page';
+
+?>
+
+<button><?php echo $username;?></button>
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
