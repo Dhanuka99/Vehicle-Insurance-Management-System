@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    background: url("../img/admin.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.logo{
+    width: 140px;
+    height: auto;
+    padding: 5px 100px;
+}
+.heading{
+    color: #fff;
+    padding: 5px 80px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+    color: #fff;
+}
+
+.navbar ul li:nth-child(2){
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+    color: rebeccapurple;
+}
+
+body a{
+    list-style: none;
+}
