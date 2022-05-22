@@ -24,6 +24,7 @@ require 'config.php';
        </ul>
     </div>
     <div class="container">
+<<<<<<< HEAD
         <div class="customerCount">
             
         </div>
@@ -56,10 +57,48 @@ require 'config.php';
       <th scope="col">Status</th>
       <!-- <th scope="col">Customer NIC</th>
       <th scope="col">Vehicle No</th> -->
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+        <div class="customerCount">
+            
+        </div>
+    <button class="btn btn-primary my-5 "><a class="text-light" href="CustomerRegister.php">Add User</a> </button>
+    
+    
+    <button type="button" class="btn btn-primary">
+  Customer Count <span class="badge text-bg-secondary">4</span>
+</button>
+
+<<<<<<< HEAD
+=======
+=======
+    <button class="btn btn-primary my-5"><a class="text-light" href="CustomerRegister.php">Add User</a> </button>
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+    <table class="table caption-top">
+  <caption><h2 style="font-weight:700;">Registered Customer List</h2></caption>
+  <thead>
+    <tr>
+      <th scope="col">#Insurance ID</th>
+      <th scope="col">Customer NIC</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Email</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Password</th>
+      <th scope="col">Actions</th>
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
     </tr>
   </thead>
   <tbody>
 <?php
+<<<<<<< HEAD
 $sql = "select * from `insurance`";
 $result = mysqli_query($conn,$sql);
 if ($result) {
@@ -91,14 +130,62 @@ if ($result) {
         <button class="btn btn-danger"><a class="text-light" href="customerDelete.php?deleteID = '.$insuranceID.'">Delete</a></button>
         <button class="btn btn-warning"><a class="text-light" href="customerView.php?customerNIC='.$customerNIC.'">View Customer</a></button>
         <button class="btn btn-info"><a class="text-light" href="customerDelete.php?vehicleNo = '.$vehicleNo.'">View Vehicle</a></button>
+=======
+$sql = "select * from `customer`";
+$result = mysqli_query($conn,$sql);
+if ($result) {
+    
+    while ($row = mysqli_fetch_assoc($result)) {
+        $id = $row['customerID'];
+        $nic = $row['customerNIC'];
+        $fname = $row['customerFirstName'];
+        $lname = $row['customerLastName'];
+        $address = $row['customerAddress'];
+        $mail = $row['customerMail'];
+        $gender = $row['customerGender'];
+        $dob = $row['customerDOB'];
+        $uname = $row['customerUserName'];
+        $upassword = $row['customerPassword'];
+
+        echo ' <tr>
+<<<<<<< HEAD
+        <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+<<<<<<< HEAD
+        <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+<<<<<<< HEAD
+        <th style="font-weight:500; scope="row">'.$id.'</th>
+=======
+        <th style="font-weight:500;" scope="row">'.$id.'</th>
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+        <td style="font-weight:500;" >'.$nic.'</td>
+        <td style="font-weight:500;">'.$fname.'</td>
+        <td style="font-weight:500;">'.$lname.'</td>
+        <td style="font-weight:500;">'.$address.'</td>
+        <td style="font-weight:500;">'.$mail.'</td>
+        <td style="font-weight:500;">'.$gender.'</td>
+        <td style="font-weight:500;">'.$dob.'</td>
+        <td style="font-weight:500;">'.$uname.'</td>
+        <td style="font-weight:500;">'.$upassword.'</td>
+        <td>
+        <button class="btn btn-success"><a class="text-light" href="customerUpdate.php">Update</a></button>
+        <button class="btn btn-danger"><a class="text-light" href="customerDelete.php?deleteID = '.$id.'">Delete</a></button>
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
         </td>
       </tr>';
     }
 }
 ?>
 
+<<<<<<< HEAD
 <!-- <td style="font-weight:500;">'.$customerNIC.'</td>
          <td style="font-weight:500;">'.$vehicleNo.'</td> -->
+=======
+
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
   </tbody>
 </table>
 </table>
