@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
  require 'config.php';
 if(isset($_POST['update'])){
@@ -20,12 +21,16 @@ if(isset($_POST['update'])){
   }
 }
 ?>
+=======
+
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/customerView.css">
     <title>Document</title>
 </head>
@@ -37,6 +42,15 @@ if(isset($_POST['update'])){
  require 'config.php';
 
    
+=======
+    <link rel="stylesheet" href="css/Customer.css">
+   
+    <title>Customer Details</title>
+</head>
+<body>
+    <?php
+    require 'config.php';
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
     $id = $_GET['customerNIC'];
     $sql = "select * from `customer` where customerNIC='$id'";
     
@@ -53,6 +67,7 @@ if(isset($_POST['update'])){
                 $email = $row['email'];
                 $dob = $row['dob'];
                 $address = $row['address'];
+<<<<<<< HEAD
                 
                 
                
@@ -96,6 +111,59 @@ if(isset($_POST['update'])){
                   </div>
                 </form>
               </div>
+=======
+    
+                echo '
+                
+                <div class="container">
+                <div class="title">Customer Details</div>
+               
+                <form>
+                  <div class="user-details">
+                      <div class="input-box">
+                          <span class="details">First Name</span>
+                          <input type="text" value="'.$fname.'" 
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" value="'.$lname.'"  >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Customer NIC</span>
+                        <input type="text" value="'.$nic.'" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">UserName</span>
+                        <input type="text" value="'.$username.'" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" value="'.$password.'" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" value="'.$email.'" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date Of Birth</span>
+                        <input type="text" value="'.$dob.'" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" value="'.$address.'" >
+                    </div>
+                   
+                   
+                  </div>
+                  <div class="button">
+                    <input type="submit" name="submit" value="Register">
+                    
+                </div>
+                </form>
+            </div>
+                
+                
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
                 ';
             }
         }
@@ -103,6 +171,15 @@ if(isset($_POST['update'])){
     
     
     ?>
+<<<<<<< HEAD
 
 </body>
+=======
+   
+</body>
+<?php
+
+
+?>
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 </html>

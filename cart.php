@@ -1,7 +1,22 @@
 <?php
 
     require 'config.php';
+<<<<<<< HEAD
   
+=======
+<<<<<<< HEAD
+  
+=======
+<<<<<<< HEAD
+  
+=======
+<<<<<<< HEAD
+  
+=======
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 ?>
 
 <!DOCTYPE html>
@@ -43,5 +58,24 @@ if ($result) {
    
 ?>
 </body>
+<<<<<<< HEAD
 </html>
 
+=======
+<<<<<<< HEAD
+</html>
+
+=======
+<<<<<<< HEAD
+</html>
+
+=======
+<<<<<<< HEAD
+</html>
+
+=======
+</html>
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7

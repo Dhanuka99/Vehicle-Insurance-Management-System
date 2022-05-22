@@ -1,10 +1,54 @@
 <?php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 
 //require 'Header.php';
 //Linking the configuration file
 
 require 'config.php';
 session_start();
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+
+require 'Header.php';
+//Linking the configuration file
+
+require 'config.php';
+<<<<<<< HEAD
+session_start();
+=======
+<<<<<<< HEAD
+session_start();
+=======
+<<<<<<< HEAD
+session_start();
+=======
+<<<<<<< HEAD
+session_start();
+=======
+
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 if(isset($_POST['login'])){
 
    $name = $_POST['Name'];
@@ -40,6 +84,22 @@ if(isset($_POST['login'])){
       # code...
       $row = mysqli_fetch_assoc($result);
       print_r($row);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
       if ($row['nic']===$nic && $row['password'] === $password) {
          header("Location: welcome.php");
          $_SESSION['username'] = $row['username'];
@@ -47,6 +107,25 @@ if(isset($_POST['login'])){
          $_SESSION['type'] = $row['type'];
          header("Location: welcome.php");
          exit();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+      if ($row['nic']===$nic && $row['password'] == $password) {
+         header("Location: welcome.php");
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
       }else{
          header("Location: login.php?error= Incorrect username or password");
          exit();
@@ -92,6 +171,32 @@ if(isset($_POST['login'])){
       echo "invalid username password";
    }
 }*/
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+require 'Header.php';
+//Linking the configuration file
+//require 'config.php';
+if(isset($_POST['submit'])){
+
+}
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -100,13 +205,59 @@ if(isset($_POST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+=======
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
     <title>Login</title>
 </head>
 <body>
 <div class="wave">
    <img src="img/phone2.svg" alt="">
 </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 
 <div class="wrapper">
 <?php
@@ -123,7 +274,31 @@ if(isset($_POST['login'])){
          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
 
             <div class="field">
+<<<<<<< HEAD
                <input type="text" name="Name" autofocus >
+=======
+<<<<<<< HEAD
+               <input type="text" name="Name" autofocus >
+=======
+<<<<<<< HEAD
+               <input type="text" name="Name" autofocus >
+=======
+<<<<<<< HEAD
+               <input type="text" name="Name" autofocus >
+=======
+<<<<<<< HEAD
+               <input type="text" name="Name" autofocus >
+=======
+<<<<<<< HEAD
+               <input type="text" name="Name" autofocus >
+=======
+               <input type="text" name="Name" >
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
                <label>User Name</label>
             </div>
 
@@ -138,6 +313,43 @@ if(isset($_POST['login'])){
             </div>
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<div class="wrapper">
+         <div class="title">
+            Login
+         </div>
+         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+            <div class="field">
+               <input type="text" name="username" required>
+               <label>User Name</label>
+            </div>
+            <div class="field">
+               <input type="text" name="nic" required>
+               <label>NIC</label>
+            </div>
+            <div class="field">
+               <input type="password" name="password" required>
+               <label>Password</label>
+            </div>
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
             <div class="content">
                <div class="checkbox">
                   <input type="checkbox" id="remember-me">
@@ -148,7 +360,35 @@ if(isset($_POST['login'])){
                </div>
             </div>
             <div class="field">
+<<<<<<< HEAD
                <input name="login" type="submit" value="Login">
+=======
+<<<<<<< HEAD
+               <input name="login" type="submit" value="Login">
+=======
+<<<<<<< HEAD
+               <input name="login" type="submit" value="Login">
+=======
+<<<<<<< HEAD
+               <input name="login" type="submit" value="Login">
+=======
+<<<<<<< HEAD
+               <input name="login" type="submit" value="Login">
+=======
+<<<<<<< HEAD
+               <input name="login" type="submit" value="Login">
+=======
+<<<<<<< HEAD
+               <input name="login" type="submit" value="Login">
+=======
+               <input type="submit" value="Login">
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
             </div>
             <div class="signup-link">
                Not a member? <a href="#">Signup now</a>
@@ -158,4 +398,33 @@ if(isset($_POST['login'])){
    </body>
     
 </body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+<?php
+//require 'Footer.php';
+
+?>
+=======
+>>>>>>> 07a56edcc00170242203cee2147e05a3c5e3bd36
+>>>>>>> 79d33cdbadfe8eb7fd9d1c5c5ea97ae378074ae4
+>>>>>>> f7254e2c5149d4e6ae732a4a613ebc75e246ab26
+>>>>>>> b5a6dc78b143e66968a06fa8c79e3e57df0637fe
+>>>>>>> a84ffb10749d2666400e9d9cdb336653c3f083a2
+>>>>>>> a52f219acb9920d906f7778e1b5d8ac04cbe680b
+>>>>>>> 3a3e3d51fff21b1cb4a4152545a360d62de3b505
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 </html>

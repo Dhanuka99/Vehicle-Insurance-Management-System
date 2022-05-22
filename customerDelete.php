@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 require 'config.php';
 
@@ -11,4 +12,7 @@ require 'config.php';
     }else{
         header("Location: admin.php?error=not delete customer");
     }
+=======
+echo "Customer Delete";
+>>>>>>> 05ef050cdbbce7dd2a428528191f078689ff65a7
 ?>
