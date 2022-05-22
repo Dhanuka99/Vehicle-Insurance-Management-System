@@ -1,42 +1,40 @@
 <?php
-<<<<<<< HEAD
-
-require('../php/config.php');
-
-    if(isset($_POST['submit'])){
-        if(empty($_POST['fname'])){
-            echo 'First Name is Reuired!';
-        }else{
-            $firstName = $_POST['fname'];
-            if(!preg_match('/^[a-zA-Z\s]+$/',$firstName)){
-                echo 'first name must be latters and space only';
-            }
-        }
-        echo $_POST['fname'];
-        echo $_POST['nic'];
-        echo $_POST['uName'];
-        echo $_POST['uPassword'];
-        echo $_POST['uEmail'];
-        echo $_POST['dob'];
-        echo $_POST['address'];
-    }
-?>
-=======
-//Linking the configuration file
 require 'config.php';
+session_start();
+if(isset($_POST['submit'])){
+$firstName = $_POST['fname'];
+$lastName = $_POST['lname'];
+$nic = $_POST['nic'];
+$userName = $_POST['uName'];
+$password = $_POST['uPassword'];
+$email = $_POST['uEmail'];
+$dob = $_POST['dob'];
+$address = $_POST['address'];
+$gender = $_POST['gender'];
+
+
+$sql = "INSERT INTO `customer`(customerNIC,firstName,lastName,userName,password,email,dob,address,gender)
+VALUES ('$nic','$firstName','$lastName','$userName','$password','$email','$dob','$address','$gender')";
+$result = mysqli_query($conn,$sql);
+if($result){
+    $_SESSION['nic'] = $nic;
+    header("Location: VehicleRegistration.php?customerID='.$nic.'");
+    
+}
+else {
+    echo "Error inserting records:".$conn->error;
+}
+
+}
 ?>
 
->>>>>>> dace51fc7db08d272bce58237c475469b42055e3
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../css/style.css">
-=======
-    <link rel="stylesheet" href="css/style.css">
->>>>>>> dace51fc7db08d272bce58237c475469b42055e3
+    <link rel="stylesheet" href="../css/Customer.css">
 
     <title>Customer Register</title>
 </head>
@@ -44,11 +42,7 @@ require 'config.php';
     <div class="container">
         <div class="title">Customer Registration</div>
        
-<<<<<<< HEAD
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-=======
-        <form action="php/customerRegister.php" method="post">
->>>>>>> dace51fc7db08d272bce58237c475469b42055e3
           <div class="user-details">
               <div class="input-box">
                   <span class="details">First Name</span>
@@ -100,27 +94,14 @@ require 'config.php';
            
           </div>
           <div class="button">
-<<<<<<< HEAD
             <input type="submit" name="submit" value="Register">
-=======
-            <input type="button" value="Register">
->>>>>>> dace51fc7db08d272bce58237c475469b42055e3
+            
         </div>
         </form>
     </div>
-
-<<<<<<< HEAD
-
 </body>
-</html>
-
-
-=======
-</body>
-</html>
-
 <?php
-    
-?>
->>>>>>> dace51fc7db08d272bce58237c475469b42055e3
 
+
+?>
+</html>
