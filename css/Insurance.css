@@ -5,8 +5,15 @@
    font-family: 'Poppins',sans-serif;
 }
 
+.back{
+    position: relative;
+    bottom: 340px;
+    left: -300px;
+    font-weight: 700;
+}
+
 body{
-   
+   display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
