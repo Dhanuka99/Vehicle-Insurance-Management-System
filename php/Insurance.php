@@ -19,13 +19,14 @@ if (isset($_POST['insurance'])) {
     $_SESSION['nic'] = $nic;
     $_SESSION['vehicleNo'] = $vehicleNo;
     
-    header("Location: index.html?customerID='.$nic.'?vehicleNo='.$vehicleNo.'");
+    header("Location: ../index.html?customerID='.$nic.'?vehicleNo='.$vehicleNo.'");
     
 }
 else {
     echo "Error inserting records:".$conn->error;
 }
 }
+
 
 
 ?>

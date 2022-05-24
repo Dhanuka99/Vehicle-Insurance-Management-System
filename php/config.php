@@ -1,6 +1,6 @@
 <?php
     // The connection object
-    $conn = mysqli_connect("localhost","danuka","1234","VISM");
+    $conn = mysqli_connect("localhost","danuka","1234","insurance");
     if($conn){
         //echo "Connection Successfull";
         

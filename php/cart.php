@@ -16,24 +16,31 @@
 </head>
 <body>
   <div class="navbar">
-  <h1>Internship Company</h1>
+  <h1>Our New Insurance Policies</h1>
   </div>
   
 <?php
-$sql = "select * from `company`";
+$sql = "select * from `policy`";
 $result = mysqli_query($conn,$sql);
 
 if ($result) {
     
     while ($row = mysqli_fetch_assoc($result)) {
-        $name = $row['companyName'];
-        $address = $row['headOfficeAddress'];
+        $id = $row['policyID'];
+        $name = $row['PolicyName'];
+      $desc = $row['policyDesc'];
         $img = $row['imgDir'];
+      
         echo '<div class="card" style="width: 18rem;">
-        <img src="img/'.$img.'" class="card-img-top" alt="...">
+        
+        <img src="../img/'.$img.'" class="card-img-top" alt="...">
+        
         <div class="card-body">
+        
         <h5 class="card-title">'.$name.'</h5>
-        <p class="card-text">'.$address.'</p>
+        
+        <p class="card-text">'.$desc.'</p>
+        
         <a href="#" class="btn btn-primary">View More</a>
       </div>
     </div>';

@@ -1,6 +1,9 @@
 <?php
 require 'config.php';
 session_start();
+if(!isset($_SESSION['successlogin']) || $_SESSION['successlogin'] != "yes"){
+    header("Location: ../php/login.php");
+}
 if(isset($_POST['submit'])){
 $firstName = $_POST['fname'];
 $lastName = $_POST['lname'];
@@ -12,13 +15,15 @@ $dob = $_POST['dob'];
 $address = $_POST['address'];
 $gender = $_POST['gender'];
 
+    
+
 
 $sql = "INSERT INTO `customer`(customerNIC,firstName,lastName,userName,password,email,dob,address,gender)
 VALUES ('$nic','$firstName','$lastName','$userName','$password','$email','$dob','$address','$gender')";
 $result = mysqli_query($conn,$sql);
 if($result){
     $_SESSION['nic'] = $nic;
-    header("Location: VehicleRegistration.php?customerID='.$nic.'");
+    header("Location: VehicleRegistration.php?customerID='.$nic.'?name='.$firstName.'");
     
 }
 else {

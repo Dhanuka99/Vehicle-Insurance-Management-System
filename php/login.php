@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 //require 'Header.php';
 //Linking the configuration file
 
@@ -9,8 +8,8 @@ session_start();
 if(isset($_POST['login'])){
 
    $name = $_POST['Name'];
-   $nic = $_POST['UserNIC'];
-   $password = $_POST['Pass'];
+   $customernic = $_POST['UserNIC'];
+   $customerpassword = $_POST['Pass'];
 
    function validate($data){
       $data = trim($data);
@@ -33,24 +32,26 @@ if(isset($_POST['login'])){
       exit();
    }else{
    
-   $sql = "SELECT * from `signup` WHERE customerNIC = '$nic' AND password = '$password'";
+   $sql = "SELECT * from `signup` WHERE customerNIC  = '$customernic'";
    
    $result = mysqli_query($conn,$sql);
   
    if (mysqli_num_rows($result)===1) {
       # code...
       $row = mysqli_fetch_assoc($result);
-      print_r($row);
+     
+      echo $row['customerNIC'];
       if ($row['customerNIC']===$nic && $row['password'] === $password) {
-         header("Location: welcome.php");
+         header("Location: ../index.html?login Success");
          $_SESSION['username'] = $row['userName'];
          $_SESSION['nic'] = $row['customerNIC'];
          $_SESSION['type'] = $row['role'];
-         header("Location: welcome.php");
+         $_SESSION['successlogin'] = "yes";
+        
          exit();
       }else{
-        // header("Location: login.php?error= Incorrect username or password");
-        // exit();
+         header("Location: login.php?error= Incorrect username or password");
+         exit();
         echo "error";
       }
    }
@@ -58,45 +59,6 @@ if(isset($_POST['login'])){
    }
 
 }
-/*
-userName
-if(isset($_POST['login'])){
-  $name = $_POST['Name'];
-  $nic = $_POST['UserNIC'];
-  $password = $_POST['Pass'];
-
-  
-   $sql = "select * from signup where username = '$name' and nic = '$nic' and password = '$password'";
-   
-   $result = mysqli_query($conn,$sql);
-
-   if (mysqli_num_rows($result) > 0) {
-      # code...
-      $row = mysqli_fetch_assoc($result);
-      if ($row['username']== $name && $row['nic']==$nic && $row['pass'] == $password) {
-         header("Location: welcome.php");
-      }else{
-         header("Location: index.html?error= Incorrect username or password");
-      }
-         # code...
-         $user = $row["username"];
-         $nic = $row["nic"];
-         $pass = $row["password"];
-         $type = $row['type'];
-         
-         session_start();
-         $_SESSION['Name'] = $user;
-         $_SESSION['UserNIC'] = $nic;
-         $_SESSION['Pass'] = $pass;
-         $_SESSION['type'] =  $type;
-      
-      
-   }else{
-      echo "invalid username password";
-   }
-}*/
-=======
->>>>>>> 62d160d28b8b8461cb7ae9d3c752cbe0a8eb2714
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -105,18 +67,27 @@ if(isset($_POST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
-<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+
     <title>Login</title>
 </head>
 <body>
+   <script>
+   /*   const params = new URLSearchParams(window.location.search)
+for (const param of params) {
+  alert(param);
+}*/
+
+   </script>
 <div class="wave">
    <img src="../img/phone2.svg" alt="">
 </div>
 
 <div class="wrapper">
 <?php
-         if (isset($_GET['error'])) { ?>
+        if (isset($_GET['error'])) { ?>
          <div class="alert alert-danger" role="alert">
             <?php echo $_GET['error']; ?>
             </div>
@@ -124,8 +95,8 @@ if(isset($_POST['login'])){
          <div class="title">
             Login
          </div>
-        
-         
+
+
          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
 
             <div class="field">
@@ -145,29 +116,24 @@ if(isset($_POST['login'])){
 
 
             <div class="content">
-               <div class="checkbox">
+               <!-- <div class="checkbox">
                   <input type="checkbox" id="remember-me">
                   <label for="remember-me">Remember me</label>
-               </div>
+               </div> -->
                <div class="pass-link">
-                  <a href="#">Forgot password?</a>
+                  <a href="../php/forgot.php">Forgot password?</a>
                </div>
             </div>
             <div class="field">
                <input name="login" type="submit" value="Login">
             </div>
-            <div class="signup-link">
-               Not a member? <a href="#">Signup now</a>
+            <div class="signup-link" >
+               Not a member? <a href="../php/signup.php">Signup now</a>
             </div>
+           
          </form>
       </div>
    </body>
   
-=======
-    <title>Document</title>
-</head>
-<body>
-    <img src="../img/wave.svg" alt="">
->>>>>>> 62d160d28b8b8461cb7ae9d3c752cbe0a8eb2714
 </body>
 </html>
