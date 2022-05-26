@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homepage.css">
+    <!--------external CSS style sheets-------->   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+</head>
+
+<!--------external link for icons-------->
+<script src="https://kit.fontawesome.com/d9dc65a069.js" ></script>
     <title>Home</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="navbar">
+            <button id="tag">
+				Part Time<i class="fa-solid fa-clock"></i>
+			</button>
             <ul>
                 <li class="item"><a href="index.html" class="active">Home</a></li>
                 <li class="item"><a href="php/admin.php">Confirm Request</a></li>
@@ -26,6 +35,18 @@
                 <button class="btn"><a href="php/signup.php">SignUp</a></button>
             </div>
         </div>
+        
+    </div>
+    <div class="search-box">
+        <div id="descript">
+            <h4>We provide opportunity to search Your dream career.<br>And employees to your company.</h4> 
+            <center>
+                <button><a class="noUndreline" href="../PHP/searchJobs.php">Search Job</a></button>
+                <button><a class="noUndreline" href="../PHP/searchCompanies.php">Search Company</a></button></center>
+        </div>
+
+        <div id="image"><center><img src="../images/Hand-Work.gif" width="100%" ></center></div>
+        
     </div>
 </body>
 </html>

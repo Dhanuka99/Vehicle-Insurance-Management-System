@@ -18,4 +18,18 @@ function validate()
   alert("phone:"+nic );
 }
 
+function loginValidation() {
+  if (document.loginForm.Name.value=="") {
+    alert("User Name is Required..");
+    document.loginForm.Name.focus();
+  }else if(document.loginForm.UserNIC.value==""){
+    alert("NIC is Required..");
+    document.loginForm.UserNIC.focus();
 
+  }else if(document.loginForm.Pass.value==""){
+    alert("Password is Required..");
+    document.loginForm.Pass.focus();
+
+}
+
+}

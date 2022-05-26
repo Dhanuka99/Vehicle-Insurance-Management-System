@@ -22,17 +22,17 @@ if(isset($_POST['login'])){
    $nic = validate($_POST['UserNIC']);
    
    if(empty($uname)){
-      header("Location: login.php?error=Username is required");
+      header("Location: login.php");
       exit();
    }else if(empty($password)){
-      header("Location: login.php?error=Password is required");
+      header("Location: login.php");
       exit();
    }else if(empty($nic)){
-      header("Location: login.php?error=NIC is required");
+      header("Location: login.php");
       exit();
    }else{
    
-   $sql = "SELECT * from `signup` WHERE customerNIC  = '$customernic'";
+   $sql = "SELECT * from `customer` WHERE customerNIC  = '$customernic'";
    
    $result = mysqli_query($conn,$sql);
   
@@ -42,15 +42,14 @@ if(isset($_POST['login'])){
      
       echo $row['customerNIC'];
       if ($row['customerNIC']===$nic && $row['password'] === $password) {
-         header("Location: ../index.html?login Success");
-         $_SESSION['username'] = $row['userName'];
-         $_SESSION['nic'] = $row['customerNIC'];
-         $_SESSION['type'] = $row['role'];
+         
+        setcookie("customerNIC",$customernic,(time()+(86400*30)),"../../");
+        header("Location: ../index.html");
          $_SESSION['successlogin'] = "yes";
         
          exit();
       }else{
-         header("Location: login.php?error= Incorrect username or password");
+         header("Location: login.php");
          exit();
         echo "error";
       }
@@ -69,7 +68,7 @@ if(isset($_POST['login'])){
     <link rel="stylesheet" href="../css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   
+   <script src="../js/loginValidation.js"></script>
 
     <title>Login</title>
 </head>
@@ -86,18 +85,13 @@ for (const param of params) {
 </div>
 
 <div class="wrapper">
-<?php
-        if (isset($_GET['error'])) { ?>
-         <div class="alert alert-danger" role="alert">
-            <?php echo $_GET['error']; ?>
-            </div>
-         <?php } ?>
+
          <div class="title">
             Login
          </div>
 
 
-         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+         <form onsubmit="loginValidation()" name="loginForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
 
             <div class="field">
                <input type="text" name="Name" autofocus id="name" >

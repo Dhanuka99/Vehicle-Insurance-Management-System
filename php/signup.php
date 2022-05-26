@@ -6,8 +6,8 @@ if(isset($_POST['signup'])){
   $role = $_POST['role'];
   $password = $_POST['password'];
   
-  $sql ="INSERT INTO `signup` (userName,customerNIC,password,role )
-  VALUES('$username','$nic','$password','$role')";
+  $sql ="INSERT INTO `customer` (userName,customerNIC,password)
+  VALUES('$username','$nic','$password')";
   $result = mysqli_query($conn,$sql);
   if($result){
     header("Location: ../php/login.php?Congratulations! Successfull SignUp.");

@@ -18,8 +18,7 @@ $gender = $_POST['gender'];
     
 
 
-$sql = "INSERT INTO `customer`(customerNIC,firstName,lastName,userName,password,email,dob,address,gender)
-VALUES ('$nic','$firstName','$lastName','$userName','$password','$email','$dob','$address','$gender')";
+$sql ="UPDATE `customer` SET firstName ='$firstName',lastName='$lastName',userName='$userName',password='$password',email='$email',dob='$dob',address='$address',gender='$gender' WHERE customerNIC ='$nic'";
 $result = mysqli_query($conn,$sql);
 if($result){
     $_SESSION['nic'] = $nic;
@@ -40,46 +39,46 @@ else {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Customer.css">
-
+    <script src="../js/customerValidation.js"></script>
     <title>Customer Register</title>
 </head>
 <body>
     <div class="container">
         <div class="title">Customer Registration</div>
        
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+        <form  onsubmit="customerValidation()" name="customer" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
           <div class="user-details">
               <div class="input-box">
                   <span class="details">First Name</span>
-                  <input type="text" name="fname" placeholder="Enter First Name" required>
+                  <input type="text" name="fname" placeholder="Enter First Name" >
               </div>
               <div class="input-box">
                 <span class="details">Last Name</span>
-                <input type="text" name="lname" placeholder="Enter Last Name" required>
+                <input type="text" name="lname" placeholder="Enter Last Name" >
             </div>
             <div class="input-box">
                 <span class="details">Customer NIC</span>
-                <input type="text" name="nic" placeholder="Enter Your NIC" required>
+                <input type="text" name="nic" placeholder="Enter Your NIC" >
             </div>
             <div class="input-box">
                 <span class="details">UserName</span>
-                <input type="text" name="uName" placeholder="Enter Username" required>
+                <input type="text" name="uName" placeholder="Enter Username" >
             </div>
             <div class="input-box">
                 <span class="details">Password</span>
-                <input type="text" name="uPassword" placeholder="Enter Password" required>
+                <input type="text" name="uPassword" placeholder="Enter Password" >
             </div>
             <div class="input-box">
                 <span class="details">Email</span>
-                <input type="text" name="uEmail" placeholder="Enter Email" required>
+                <input type="text" name="uEmail" placeholder="Enter Email" >
             </div>
             <div class="input-box">
                 <span class="details">Date Of Birth</span>
-                <input type="text" name="dob" placeholder="Enter Your Birthday" required>
+                <input type="text" name="dob" placeholder="Enter Your Birthday" >
             </div>
             <div class="input-box">
                 <span class="details">Address</span>
-                <input type="text" name="address" placeholder="Enter Your Address" required>
+                <input type="text" name="address" placeholder="Enter Your Address" >
             </div>
            <div class="gender-details">
                <input type="radio" name="gender" id="dot-1">
